@@ -1,5 +1,8 @@
 var btnTranslate = document.querySelector("#btnTranslate");
-const englishTextAreaValue = document.getElementById("englishTextArea");
+let englishTextAreaValue = document.getElementById("englishTextArea");
 
 console.log(englishTextAreaValue.value);
+englishTextAreaValue.addEventListener('input', function printValue(event){
+    console.log(event.target.value);
+})
 
